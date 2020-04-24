@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <!--必须指定当前映射的文件名-->
-<mapper namespace="dyy.dao.devuser.AppCategoryMapper">
+<mapper namespace="dyy.dao.devuser.AppCategoryDao">
 
     <!--重用的SQL块 id名称-->
     <sql id="table" >

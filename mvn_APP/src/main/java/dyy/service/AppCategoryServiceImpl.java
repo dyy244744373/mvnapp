@@ -1,7 +1,7 @@
 package dyy.service;
 
 
-import dyy.dao.devuser.AppCategoryMapper;
+import dyy.dao.devuser.AppCategoryDao;
 import dyy.pojo.AppCategory;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -13,7 +13,7 @@ import java.util.List;
 @Transactional
 public class AppCategoryServiceImpl implements AppCategoryService {
     @Resource
-    private AppCategoryMapper appCategoryDao;
+    private AppCategoryDao appCategoryDao;
     @Override
     @Transactional(propagation = Propagation.SUPPORTS ,readOnly = true)
     public List<AppCategory> stair() {
